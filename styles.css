@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  font-size: 16px;
+  font-family: "Noticia Text", serif;
+}
+body {
+  background-color: rgb(235, 243, 243);
+}
+.container {
+  margin: 1%;
+  border-radius: 5px;
+  -webkit-box-shadow: 4px 6px 43px 3px rgba(232, 255, 86, 0.7);
+  -moz-box-shadow: 4px 6px 43px 3px rgba(232, 255, 86, 0.7);
+  box-shadow: 4px 6px 43px 3px rgba(232, 255, 86, 0.7);
+}
+.header {
+  display: flex;
+  flex-direction: row;
+}
+#heading {
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: aliceblue;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+.header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid darkgrey;
+}
+.header .name {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6px;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+.header a {
+  font-size: 0.9rem;
+  color: lightgoldenrodyellow;
+  text-decoration: underline;
+}
+h4 {
+  font-size: 1.1rem;
+  padding: 5px;
+}
+p {
+  padding: 5px;
+  font-size: 1rem;
+}
+
+.platform1,
+.platform2,
+.platform3,
+.platform4,
+.platform5 {
+  margin: 5px;
+  padding: 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 4px 6px 43px 3px rgba(232, 255, 86, 0.3);
+  -moz-box-shadow: 4px 6px 43px 3px rgba(232, 255, 86, 0.3);
+  box-shadow: 4px 6px 43px 3px rgba(232, 255, 86, 0.3);
+}
+.platform1:hover,
+.platform2:hover,
+.platform3:hover,
+.platform4:hover,
+.platform5:hover {
+  -webkit-box-shadow: 4px 6px 43px 3px rgba(161, 153, 153, 0.95);
+  -moz-box-shadow: 4px 6px 43px 3px rgba(161, 153, 153, 0.95);
+  box-shadow: 4px 6px 43px 3px rgba(161, 153, 153, 0.95);
+}
+.platform1 {
+  background-color: #ffc16e;
+}
+.platform2 {
+  background-color: #ffa07a;
+}
+.platform3 {
+  background-color: peru;
+}
+.platform4 {
+  background-color: lightcoral;
+}
+.platform5 {
+  background-color: lightgreen;
+}
+@media (min-width: 620px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .top, .bottom{
+        display: flex;
+        flex-direction: row;
+    }
+    .platform1, .platform4{
+        flex-basis: 55%;
+    }
+    .platform2, .platform3{
+        flex-basis: 45%;
+    }
+}
+@media (min-width: 890px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 75%;
+  }
+  .right {
+    display: flex;
+    flex-basis: 25%;
+  }
+  .top,
+  .bottom {
+    display: flex;
+  }
+  .platform1,
+  .platform4 {
+    flex-basis: 60%;
+  }
+  .platform2,
+  .platform3 {
+    flex-basis: 40%;
+  }
+}
